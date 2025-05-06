@@ -39,7 +39,7 @@ export default function App() {
   };
 
   const handleGenerateToken = async (user: any) => {
-    await fetch("http://localhost:5000/api/generate_token", {
+    await fetch("https://content-crafter-lovat.vercel.app/api/generate_token", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

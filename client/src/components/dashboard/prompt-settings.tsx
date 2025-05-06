@@ -63,7 +63,7 @@ export default function PromptSettings({
     };
     setIsGenerating(true);
     await axios
-      .post(`http://localhost:5000/api/generate`, payLoad)
+      .post(`https://content-crafter-lovat.vercel.app/api/generate`, payLoad)
       .then((res) => contentState(res.data))
       .catch((error) => console.log("object", error));
   };

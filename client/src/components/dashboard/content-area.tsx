@@ -62,7 +62,10 @@ export default function ContentArea({
 
   const handleGenerateContent = async () => {
     await axios
-      .post(`http://localhost:5000/api/generate`, promptSettings)
+      .post(
+        `https://content-crafter-lovat.vercel.app/api/generate`,
+        promptSettings
+      )
       .then((res) => contentState(res.data.content))
       .catch((error) => console.log("object", error));
   };

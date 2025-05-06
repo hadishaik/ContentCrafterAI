@@ -30,7 +30,7 @@ export default function DraftHistory() {
   const FetchHistory = async (email: string) => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/content/recent?email=${email}`
+        `https://content-crafter-lovat.vercel.app/api/content/recent?email=${email}`
       );
       const data = await response.data;
       setDrafts(data);
