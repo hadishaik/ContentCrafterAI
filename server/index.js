@@ -31,6 +31,13 @@ app.post("/api/generate", generateContentHandler);
 
 app.get("/api/content/recent", getRecentHistory);
 
+app.get("/", (req, res) => {
+  res.json({
+    activeStatus: true,
+    error: false,
+  });
+});
+
 app.listen(port, () => {
   console.log(`server started on port http://localhost:${port}`);
 });
