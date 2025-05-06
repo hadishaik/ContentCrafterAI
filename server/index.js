@@ -32,7 +32,7 @@ app.post("/api/generate", generateContentHandler);
 app.get("/api/content/recent", getRecentHistory);
 
 app.get("/", (req, res) => {
-  res.json({
+  res.send({
     activeStatus: true,
     error: false,
   });
