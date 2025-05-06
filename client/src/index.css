@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-indigo: oklch(51.1% 0.262 276.966);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
