@@ -12,7 +12,7 @@ const port = 5000;
 // Enable CORS for your frontend origin
 app.use(
   cors({
-    origin: "https://content-crafter-ai-h8sq.vercel.app/",
+    origin: "https://content-crafter-ai-h8sq.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
